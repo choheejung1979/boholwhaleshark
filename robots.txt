@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://boholwhaleshark.com/sitemap.xml
