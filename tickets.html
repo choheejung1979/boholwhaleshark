@@ -1,115 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#031726" />
-  <title>Tickets | Bohol Whale Shark</title>
-  <meta name="description" content="Choose your Bohol whale shark visit date, ticket type and payment method." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Tickets | Bohol Whale Shark</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="tickets-page">
-  <header class="ticket-hero">
-    <video class="hero-video" autoplay muted loop playsinline preload="metadata">
-      <source src="assets/bohol-whaleshark-hero-720p.mp4" type="video/mp4" />
-    </video>
-    <div class="hero-overlay"></div>
-    <nav class="nav shell" aria-label="Main navigation">
-      <a class="brand" href="index.html" aria-label="Bohol Whale Shark home">
-        <span class="brand-mark" aria-hidden="true">◁◉</span>
-        <span><strong>BOHOL</strong><small>WHALE SHARK</small></span>
-      </a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="index.html#tours">Tours</a>
-        <a href="index.html#about">About</a>
-        <a href="faq.html">FAQ</a>
-      </div>
-      <a class="btn btn-small active-ticket" href="tickets.html">Book Now</a>
-    </nav>
+<body>
+  <nav class="nav shell" aria-label="Main navigation" style="color:#0b1c2d">
+    <a class="brand" href="index.html"><span class="brand-mark">◁◉</span><span class="brand-text"><strong>BOHOL</strong><small>WHALE SHARK</small></span></a>
+    <div class="nav-links"><a href="index.html">Home</a><a href="index.html#tours">Tours</a><a href="index.html#about">About</a><a href="faq.html">FAQ</a></div>
+    <a class="btn btn-small nav-book" href="tickets.html">Book Now</a>
+  </nav>
 
-    <div class="shell ticket-intro">
-      <p class="opening-notice">OPENING NOVEMBER 1, 2026</p>
-      <p class="eyebrow">ONLINE TICKETING</p>
-      <h1>BOOK YOUR<br><span>WHALE SHARK EXPERIENCE</span></h1>
-      <p>Select your date and guests, review the total, then continue to secure payment.</p>
+  <header class="page-hero">
+    <div class="shell">
+      <p class="eyebrow">OFFICIAL ONLINE BOOKING</p>
+      <h1>Book Your Bohol Whale Shark Experience</h1>
+      <p>Final rates and payment processing will be connected before launch.</p>
     </div>
   </header>
 
-  <main class="ticket-main shell">
-    <section class="booking-layout">
-      <div class="ticket-benefits">
-        <p class="eyebrow dark">FAST • SIMPLE • CONTACTLESS</p>
-        <h2>Your visit starts here</h2>
-        <p>Complete your reservation in a few steps. After successful payment, the live system will issue a unique QR e-ticket for check-in.</p>
-        <div class="mini-benefits">
-          <div><span>✓</span><strong>Instant confirmation</strong><small>Booking details shown immediately</small></div>
-          <div><span>▦</span><strong>QR e-ticket</strong><small>Present it from your phone</small></div>
-          <div><span>🔒</span><strong>Secure checkout</strong><small>PayMongo-ready payment flow</small></div>
-        </div>
-        <a class="back-link" href="index.html">← Back to visitor information</a>
-      </div>
-
-      <aside class="booking-card booking-card-page" aria-labelledby="booking-title">
-        <div class="booking-head"><span class="step-badge">BOOK</span><h2 id="booking-title">Book Your Experience</h2></div>
-        <div class="field-group">
-          <label for="visit-date"><span class="num">1</span> Select date</label>
-          <input id="visit-date" type="date" />
-        </div>
-        <div class="field-group">
-          <div class="field-label"><span><span class="num">2</span> Choose your tickets</span></div>
-          <div class="ticket-row" data-ticket="adult" data-price="2500">
-            <div><strong>Whale Shark Experience</strong><small>Adult (13+ years) • Boat • Guide • Gear</small><b>₱2,500</b></div>
-            <div class="qty-control" aria-label="Adult quantity"><button type="button" data-action="minus">−</button><span data-qty>2</span><button type="button" data-action="plus">+</button></div>
-          </div>
-          <div class="ticket-row" data-ticket="child" data-price="1500">
-            <div><strong>Child</strong><small>6–11 years old</small><b>₱1,500</b></div>
-            <div class="qty-control" aria-label="Child quantity"><button type="button" data-action="minus">−</button><span data-qty>0</span><button type="button" data-action="plus">+</button></div>
-          </div>
-          <div class="ticket-row" data-ticket="observer" data-price="1000">
-            <div><strong>Observer / Non-swimmer</strong><small>Boat experience only</small><b>₱1,000</b></div>
-            <div class="qty-control" aria-label="Observer quantity"><button type="button" data-action="minus">−</button><span data-qty>0</span><button type="button" data-action="plus">+</button></div>
-          </div>
-        </div>
-        <div class="summary-box"><div><span>Your booking</span><strong id="summary-date">Select a date</strong></div><div class="summary-total"><span>Total</span><strong id="total-price">₱5,000</strong></div></div>
-        <div class="field-group payment-select">
-          <label><span class="num">3</span> Payment method</label>
-          <div class="pay-grid" role="radiogroup" aria-label="Payment method">
-            <button class="pay-option active" type="button" data-pay="Card">VISA / MC</button>
-            <button class="pay-option" type="button" data-pay="GCash">GCash</button>
-            <button class="pay-option" type="button" data-pay="Maya">maya</button>
-            <button class="pay-option" type="button" data-pay="QR Ph">QR Ph</button>
-          </div>
-        </div>
-        <button id="checkout-btn" class="btn checkout" type="button">Continue to Payment</button>
-        <p class="secure-note">🔒 Secure payment • PayMongo-ready checkout</p>
-      </aside>
+  <main class="section shell ticket-wrap">
+    <section class="ticket-copy">
+      <p class="eyebrow dark">FAST • SIMPLE • CONTACTLESS</p>
+      <h2>Your ticket, ready on your phone.</h2>
+      <p>This page is structured for date selection, guest details and secure online checkout. Until final rates are confirmed, the form remains a clean launch-ready placeholder.</p>
     </section>
 
-    <section class="payments ticket-payments" aria-labelledby="payments-title">
-      <p id="payments-title">We accept secure payments</p>
-      <div class="payment-logos"><span class="visa">VISA</span><span class="mastercard"><i></i><i></i><b>Mastercard</b></span><span class="gcash">GCash</span><span class="maya">maya</span><span class="qrph">▦ QR Ph</span><span class="powered">🔒 Secure payment<br><small>Powered by PayMongo</small></span></div>
-    </section>
+    <form class="booking-card" onsubmit="return false;">
+      <label for="visit-date">Visit date</label>
+      <input id="visit-date" type="date">
+
+      <label for="guests">Guests</label>
+      <select id="guests">
+        <option>1 guest</option>
+        <option>2 guests</option>
+        <option>3 guests</option>
+        <option>4 guests</option>
+        <option>5 guests</option>
+      </select>
+
+      <label for="name">Full name</label>
+      <input id="name" type="text" placeholder="Guest name">
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="name@example.com">
+
+      <button class="btn btn-large" type="submit">Booking Opens Soon</button>
+    </form>
   </main>
 
   <footer>
-    <div class="shell footer-grid">
-      <div class="brand footer-brand"><span class="brand-mark">◁◉</span><span><strong>BOHOL</strong><small>WHALE SHARK</small></span></div>
-      <div><strong>Quick Links</strong><a href="index.html">Home</a><a href="index.html#tours">Tours</a><a href="index.html#about">About</a></div>
-      <div><strong>Help & Support</strong><a href="faq.html">FAQ</a><a href="#">Booking Terms</a><a href="#">Privacy Policy</a></div>
-      <div><strong>Contact</strong><span>Support details to be added</span><span>Bohol, Philippines</span></div>
-    </div>
-    <p class="copyright">© 2026 Bohol Whale Shark. Prototype ticketing website.</p>
+    <p class="copyright">© 2026 Bohol Whale Shark.</p>
   </footer>
-
-  <dialog id="ticket-dialog" class="ticket-dialog">
-    <button class="dialog-close" id="dialog-close" aria-label="Close">×</button>
-    <div class="confirm-icon">✓</div><p class="eyebrow dark">BOOKING CONFIRMED</p><h2>Your QR ticket is ready</h2>
-    <p class="dialog-copy">Demo confirmation for the website prototype.</p>
-    <div class="e-ticket"><div class="ticket-meta"><small>BOOKING ID</small><strong id="booking-id">BWS-DEMO</strong><small>DATE</small><strong id="ticket-date">—</strong><small>GUESTS</small><strong id="ticket-guests">—</strong><small>PAYMENT</small><strong id="ticket-payment">—</strong><small>TOTAL</small><strong id="ticket-total">—</strong></div><canvas id="qr-canvas" width="180" height="180"></canvas></div>
-    <p class="demo-warning">Prototype only — production QR codes must be generated and validated against a server-side booking record.</p>
-    <button class="btn checkout" id="done-btn" type="button">Done</button>
-  </dialog>
-  <script src="script.js"></script>
 </body>
 </html>
