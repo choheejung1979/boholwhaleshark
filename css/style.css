@@ -7,3 +7,18 @@
 @media(max-width:900px){.faq-preview-grid,.faq-layout{grid-template-columns:1fr}.faq-categories{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}.faq-categories strong{grid-column:1/-1}.faq-hero{padding-top:70px}.hero-overlay{background:linear-gradient(90deg,rgba(3,28,40,.86),rgba(3,28,40,.5))}}
 @media(max-width:600px){.opening-banner{font-size:.69rem}.faq-categories{grid-template-columns:1fr}.faq-preview-grid{gap:22px}.faq-hero{padding:58px 0}.faq-search-wrap{border-radius:14px}.hero-video{object-position:center center}}
 @media(prefers-reduced-motion:reduce){.hero-video{display:none}.hero{background:linear-gradient(90deg,rgba(4,34,47,.86),rgba(4,34,47,.42)),url('../assets/bohol-whaleshark-poster.jpg') center/cover}}
+.hero-grid-home{
+  padding-left:70px;
+}
+
+@media (max-width:980px){
+  .hero-grid-home{
+    padding-left:20px;
+  }
+}
+
+@media (max-width:620px){
+  .hero-grid-home{
+    padding-left:0;
+  }
+}
