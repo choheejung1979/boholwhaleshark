@@ -1,33 +1,16 @@
-# Bohol Whale Shark — Website Prototype
+# Bohol Whale Shark
 
-Static website ready for GitHub + Cloudflare Pages.
+Static site for GitHub + Cloudflare Workers/Static Assets.
 
-## Deploy
-1. Create a GitHub repository (example: `boholwhaleshark`).
-2. Upload **the contents of this folder** to the repository root.
-3. In Cloudflare Pages, connect the GitHub repository.
-4. Framework preset: **None**.
-5. Build command: leave blank.
-6. Build output directory: `/` (repository root).
-7. Add `boholwhaleshark.com` as the custom domain when ready.
+## Main navigation
+HOME / TOURS / ABOUT / FAQ / BOOK NOW
 
-## Change prices later
-Open `js/config.js`.
+## Current status
+- Planned opening displayed as November 1, 2026
+- Customer login/registration is not used
+- Manage Booking remains as a booking-reference + email lookup placeholder
+- Live payment is disabled until final prices and PayMongo integration are ready
+- Main hero uses `assets/bohol-whaleshark-hero-720p.mp4`
 
-Each package currently has:
-```js
-price: null
-```
-Change it to a number, for example:
-```js
-price: 3500
-```
-The package card and booking summary will automatically show the formatted PHP price.
-
-You can also edit package names, inclusions and pickup locations in the same file.
-
-## Payment later
-`booking.html` currently stops at a prototype message. When official pricing is ready, replace the submit behavior in `js/booking.js` with a call to your Cloudflare Worker / PayMongo checkout endpoint.
-
-## Before public launch
-Replace placeholder phone/email, confirm all tour rules, operating location, inclusions, prices, cancellation policy, wildlife interaction rules, local government requirements, and photos.
+## Update tour prices later
+Edit `js/config.js`. Replace `price: null` with a numeric PHP price such as `price: 3500`.
